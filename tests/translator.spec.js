@@ -4,7 +4,7 @@ const { TranslatorPage } = require('../utils/translatorPage');
 const TEST_DATA = [
     //Question TCs
     { tcId: "Neg_001", input: "oyaa dhawalta kawadha?", expected: "ඔයා දවල්ට කෑවද?", type: "Question" },
-    { tcId: "Neg_002", input: "eeta passe mona wenawada?", expected: "ඊට පස්සේ මොකද වෙන්නේ?", type: "Question" },
+    { tcId: "Neg_002", input: "eeta passe mona wenawada?", expected: "ඊට පස්සේ මොනා වෙනවද?", type: "Question" },
     //Command TCs
     { tcId: "Neg_003", input: "ithuru wada tika igana ganna kiyala", expected: "ඉතිරි වැඩ ටික ඉගෙන ගන්න කියලා", type: "Command" },
     { tcId: "Neg_004", input: "dawasata kalin ewanna ona meka", expected: "දවසට කලින් එවන්න ඕන මේක", type: "Command" },
