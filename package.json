@@ -1,0 +1,23 @@
+{
+  "name": "it23163218-itpm-assignment1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HishenPerera/IT23163218-ITPM-Assignment1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HishenPerera/IT23163218-ITPM-Assignment1/issues"
+  },
+  "homepage": "https://github.com/HishenPerera/IT23163218-ITPM-Assignment1#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}
