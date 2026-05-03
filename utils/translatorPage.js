@@ -2,6 +2,7 @@ class TranslatorPage {
   constructor(page) {
     this.page = page;
 
+    // Strict + reliable selectors (based on your error)
     this.input = page.getByPlaceholder('Type your English text here…');
     this.output = page.getByPlaceholder('Transliterated Sinhala will appear here…');
   }
@@ -12,13 +13,15 @@ class TranslatorPage {
   }
 
   async translate(text) {
-    await this.input.fill('');
-    await this.input.fill(text);
+  await this.input.fill('');
+  await this.input.fill(text);
 
-    await this.page.waitForTimeout(3000);
+  // Wait for UI reaction (simple + stable)
+  await this.page.waitForTimeout(2000);
 
-    return (await this.output.inputValue())?.trim();
-  }
+  // Read value directly (no strict waiting)
+  return await this.output.inputValue();
+}
 }
 
 module.exports = { TranslatorPage };
